@@ -792,7 +792,8 @@ unconstrained matrices, if their dimensions match, and vice-versa.
 \subsection{Cholesky Factors of Correlation Matrices}
 
 Matrix variables may be constrained to represent the Cholesky factors
-of a correlation matrix.
+of a correlation matrix. This is often more convenient or more
+efficient than representing correlation matrices directly.
 
 A Cholesky factor for a correlation matrix $L$ is a $K \times K$
 lower-triangular matrix with positive diagonal entries and rows that
@@ -827,9 +828,8 @@ $K$ is the value of the data variable \code{K}.
 
 \subsection{Cholesky Factors of Covariance Matrices}
 
-Matrix variables may be constrained to represent the Cholesky factors
-of a covariance matrix.  This is often more convenient or more
-efficient than representing covariance matrices directly.
+Akin to correlation matrices, matrix variables may be constrained to
+represent the Cholesky factors of a covariance matrix.
 
 A Cholesky factor $L$ is an $M \times N$ lower-triangular matrix (if
 $m < n$ then $L[m,n] =0$) with a positive diagonal ($L[k,k] = 0$) and
